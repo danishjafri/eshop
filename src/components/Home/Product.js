@@ -17,7 +17,7 @@ const Product = ({ id, title, image, price, rating }) => {
                 <div className="product-rating">
                     {
                         Array(rating).fill().map((_, counter) => {
-                            return <StarIcon id={counter} className='star-icon' />
+                            return <StarIcon key={counter} className='star-icon' />
                         })
                     }
                 </div>
